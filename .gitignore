@@ -3,7 +3,6 @@
 Thumbs.db
 
 # Temporary / Scratch Files
-*.pdf
 *_extracted.txt
 fetch_*.py
 __pycache__/

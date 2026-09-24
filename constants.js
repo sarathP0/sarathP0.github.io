@@ -18,7 +18,8 @@ const PORTFOLIO_DATA = {
     location: "Tanur, Malappuram, Kerala, India",
     linkedin: "https://www.linkedin.com/in/sarathp0",
     github: "https://github.com/sarathP0",
-    bio: "Senior Angular Developer & Mobile App Engineer with 5+ years of experience engineering high-performance web applications and cross-platform mobile apps with clean, scalable architecture. Proven track record in enterprise SaaS products across travel accounting and audit & risk management."
+    bio: "Senior Angular Developer & Mobile App Engineer with 5+ years of experience engineering high-performance web applications and cross-platform mobile apps with clean, scalable architecture. Proven track record in enterprise SaaS products across travel accounting and audit & risk management.",
+    resumeUrl: "Sarath_P_Resume.pdf"
   },
 
   // Published Mobile Apps (Google Play Store & Mobile)

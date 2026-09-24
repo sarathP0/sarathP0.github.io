@@ -182,6 +182,26 @@ button {
   color: #fff;
 }
 
+.nav-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent-cyan);
+  background: rgba(6, 182, 212, 0.08);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.nav-resume-btn:hover {
+  background: rgba(6, 182, 212, 0.18);
+  border-color: var(--accent-cyan);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
 .nav-contact-highlight {
   background: rgba(99, 102, 241, 0.12);
   color: #a5b4fc;
@@ -464,6 +484,18 @@ button {
 .social-chip:hover {
   background: rgba(99, 102, 241, 0.15);
   border-color: rgba(99, 102, 241, 0.3);
+  color: #fff;
+}
+
+.social-chip-resume {
+  background: rgba(6, 182, 212, 0.08);
+  border-color: rgba(6, 182, 212, 0.25);
+  color: var(--accent-cyan);
+}
+
+.social-chip-resume:hover {
+  background: rgba(6, 182, 212, 0.2);
+  border-color: var(--accent-cyan);
   color: #fff;
 }
 
