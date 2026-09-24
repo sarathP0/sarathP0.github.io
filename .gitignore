@@ -1,0 +1,14 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Temporary / Scratch Files
+*.pdf
+*_extracted.txt
+fetch_*.py
+__pycache__/
+*.pyc
+
+# Local IDE & Logs
+.vscode/
+.idea/
