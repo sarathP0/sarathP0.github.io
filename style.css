@@ -85,7 +85,7 @@ button {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 85px 0;
 }
 
 .section-header {
@@ -121,6 +121,11 @@ button {
   background: linear-gradient(135deg, #a5b4fc 0%, #6366f1 50%, #38bdf8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.text-accent {
+  color: #38bdf8;
+  font-weight: 600;
 }
 
 /* ==========================================================================
@@ -177,39 +182,20 @@ button {
   color: #fff;
 }
 
-.nav-btn-highlight {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 14px;
-  font-size: 0.84rem;
-  font-family: var(--font-mono);
-  font-weight: 600;
-  color: #10b981;
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.3);
+.nav-contact-highlight {
+  background: rgba(99, 102, 241, 0.12);
+  color: #a5b4fc;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  padding: 6px 16px;
   border-radius: var(--radius-full);
+  font-weight: 600;
   transition: all var(--transition-fast);
 }
 
-.nav-btn-highlight:hover {
-  background: rgba(16, 185, 129, 0.2);
-  transform: translateY(-1px);
-}
-
-.dot-status {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #10b981;
-  box-shadow: 0 0 8px #10b981;
-  animation: pulse-dot 2s infinite;
-}
-
-@keyframes pulse-dot {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  50% { transform: scale(1.2); opacity: 1; }
-  100% { transform: scale(0.95); opacity: 0.8; }
+.nav-contact-highlight:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
 }
 
 .mobile-menu-toggle {
@@ -265,17 +251,6 @@ button {
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
-}
-
-.btn-outline {
-  border: 1px solid var(--border-subtle);
-  color: var(--text-muted);
-}
-
-.btn-outline:hover {
-  color: #fff;
-  border-color: var(--primary);
-  background: rgba(99, 102, 241, 0.08);
 }
 
 /* ==========================================================================
@@ -468,16 +443,6 @@ button {
   font-weight: 500;
 }
 
-.mono-badge {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 3px 8px;
-  border-radius: 4px;
-  border: 1px solid var(--border-subtle);
-  color: #38bdf8;
-}
-
 .profile-card-footer {
   display: flex;
   gap: 10px;
@@ -500,122 +465,6 @@ button {
   background: rgba(99, 102, 241, 0.15);
   border-color: rgba(99, 102, 241, 0.3);
   color: #fff;
-}
-
-/* ==========================================================================
-   ADMOB BANNER SECTION
-   ========================================================================== */
-.admob-banner-section {
-  padding: 20px 0 60px 0;
-}
-
-.admob-box {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(6, 182, 212, 0.06) 100%);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  border-radius: var(--radius-md);
-  padding: 28px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.08);
-}
-
-.admob-header-row {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-}
-
-.tag-admob {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background: #10b981;
-  color: #064e3b;
-  padding: 3px 10px;
-  border-radius: var(--radius-full);
-}
-
-.tag-app {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background: rgba(56, 189, 248, 0.15);
-  color: #38bdf8;
-  padding: 3px 10px;
-  border-radius: var(--radius-full);
-  border: 1px solid rgba(56, 189, 248, 0.3);
-}
-
-.admob-info h3 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 6px;
-}
-
-.admob-info p {
-  font-size: 0.92rem;
-  color: var(--text-muted);
-  margin-bottom: 16px;
-}
-
-.admob-info code {
-  color: #a7f3d0;
-}
-
-.admob-code-snippet {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  background: #09101d;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: var(--radius-sm);
-  padding: 8px 14px;
-}
-
-.admob-code-snippet code {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: #34d399;
-}
-
-.btn-copy {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  padding: 4px 10px;
-  border-radius: 4px;
-  font-size: 0.76rem;
-  font-weight: 600;
-  transition: var(--transition-fast);
-}
-
-.btn-copy:hover {
-  background: #10b981;
-  color: #064e3b;
-}
-
-.btn-admob-view {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #10b981;
-  color: #042f2e;
-  font-weight: 700;
-  padding: 14px 24px;
-  border-radius: var(--radius-sm);
-  transition: all var(--transition-norm);
-  white-space: nowrap;
-}
-
-.btn-admob-view:hover {
-  background: #34d399;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
 }
 
 /* ==========================================================================
@@ -696,16 +545,6 @@ button {
   letter-spacing: 0.5px;
   background: rgba(99, 102, 241, 0.15);
   color: #818cf8;
-  padding: 2px 8px;
-  border-radius: var(--radius-full);
-}
-
-.admob-badge-verified {
-  font-size: 0.72rem;
-  font-weight: 700;
-  background: rgba(16, 185, 129, 0.15);
-  color: #34d399;
-  border: 1px solid rgba(16, 185, 129, 0.3);
   padding: 2px 8px;
   border-radius: var(--radius-full);
 }
@@ -1091,7 +930,7 @@ button {
 }
 
 /* ==========================================================================
-   CONTACT SECTION
+   CONTACT SECTION (Aligned header: icon + label together, spacious content)
    ========================================================================== */
 .contact-box {
   background: var(--bg-card);
@@ -1110,8 +949,8 @@ button {
 
 .contact-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   margin-bottom: 30px;
 }
 
@@ -1119,9 +958,10 @@ button {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 20px;
+  padding: 24px 26px;
   display: flex;
   flex-direction: column;
+  gap: 12px;
   transition: all var(--transition-fast);
 }
 
@@ -1131,39 +971,55 @@ button {
   transform: translateY(-3px);
 }
 
+.contact-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-label-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .contact-icon {
-  font-size: 1.5rem;
-  margin-bottom: 12px;
+  font-size: 1.25rem;
+  line-height: 1;
 }
 
 .contact-label {
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   text-transform: uppercase;
   color: var(--text-dim);
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
+}
+
+.contact-action-arrow {
+  font-size: 1.15rem;
+  color: var(--text-dim);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.contact-card:hover .contact-action-arrow {
+  color: var(--accent-cyan);
+  transform: translate(3px, -3px);
 }
 
 .contact-value {
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: #fff;
-  margin-bottom: 12px;
   word-break: break-all;
-}
-
-.contact-action {
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--accent-cyan);
-  margin-top: auto;
+  line-height: 1.4;
 }
 
 .contact-footer-note {
   text-align: center;
   font-size: 0.9rem;
   color: var(--text-muted);
-  padding-top: 20px;
+  padding-top: 24px;
   border-top: 1px solid var(--border-subtle);
 }
 
@@ -1350,9 +1206,8 @@ button {
     display: flex;
   }
 
-  .admob-box {
-    flex-direction: column;
-    align-items: flex-start;
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
   }
 
   .education-grid {

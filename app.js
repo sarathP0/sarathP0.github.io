@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. Render Skills
   renderSkills(data.skills);
 
-  // 5. Setup Interactive Event Listeners (Clipboard, Mobile Menu, Modals)
+  // 5. Setup Interactive Event Listeners (Mobile Menu, Modals)
   setupInteractions();
 
   // 6. Set dynamic year
@@ -38,10 +38,6 @@ function renderApps(apps) {
   if (!container || !apps) return;
 
   container.innerHTML = apps.map(app => {
-    const admobBadge = app.isAdmobVerified
-      ? `<span class="admob-badge-verified" title="Verified in app-ads.txt">&#10003; AdMob Verified</span>`
-      : '';
-
     const highlightsList = app.highlights && app.highlights.length
       ? `<ul class="app-highlights">
           ${app.highlights.map(h => `<li>${escapeHtml(h)}</li>`).join('')}
@@ -74,7 +70,6 @@ function renderApps(apps) {
           <div class="app-heading-wrap">
             <div class="app-badge-row">
               <span class="app-badge-pill">${escapeHtml(app.platform)}</span>
-              ${admobBadge}
             </div>
             <h3 class="app-title">${escapeHtml(app.title)}</h3>
             <span class="app-category">${escapeHtml(app.category)}</span>
@@ -208,29 +203,6 @@ function renderSkills(skills) {
  * Setup Event Listeners
  */
 function setupInteractions() {
-  // Copy AdMob snippet to clipboard
-  const copyBtn = document.getElementById('btn-copy-admob');
-  const codeEl = document.getElementById('app-ads-code');
-
-  if (copyBtn && codeEl) {
-    copyBtn.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(codeEl.textContent.trim());
-        const originalText = copyBtn.textContent;
-        copyBtn.textContent = 'Copied!';
-        copyBtn.style.background = '#10b981';
-        copyBtn.style.color = '#064e3b';
-        setTimeout(() => {
-          copyBtn.textContent = originalText;
-          copyBtn.style.background = '';
-          copyBtn.style.color = '';
-        }, 2200);
-      } catch (err) {
-        console.error('Failed to copy', err);
-      }
-    });
-  }
-
   // Mobile menu toggle
   const menuToggle = document.getElementById('menu-toggle');
   const navLinks = document.getElementById('nav-links');

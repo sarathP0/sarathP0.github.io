@@ -18,9 +18,7 @@ const PORTFOLIO_DATA = {
     location: "Tanur, Malappuram, Kerala, India",
     linkedin: "https://www.linkedin.com/in/sarathp0",
     github: "https://github.com/sarathP0",
-    bio: "Senior Angular Developer & Mobile App Engineer with 5+ years of experience engineering high-performance web applications and cross-platform mobile apps with clean, scalable architecture. Proven track record in enterprise SaaS products across travel accounting and audit & risk management.",
-    admobPublisherId: "pub-3913202373436030",
-    appAdsTxtPath: "app-ads.txt"
+    bio: "Senior Angular Developer & Mobile App Engineer with 5+ years of experience engineering high-performance web applications and cross-platform mobile apps with clean, scalable architecture. Proven track record in enterprise SaaS products across travel accounting and audit & risk management."
   },
 
   // Published Mobile Apps (Google Play Store & Mobile)
@@ -31,7 +29,6 @@ const PORTFOLIO_DATA = {
       category: "Casual Puzzle Game",
       platform: "Google Play Store",
       badge: "Featured Mobile Game",
-      isAdmobVerified: true,
       
       /* ICON PATH: You can manually replace this file in assets/icons/ */
       icon: "assets/icons/water_sort.jpg",
@@ -41,12 +38,11 @@ const PORTFOLIO_DATA = {
         "Dynamic liquid pouring simulation & color blending logic",
         "Thousands of handcrafted puzzle levels from easy to challenging",
         "Undo moves and tube booster helpers for seamless gameplay",
-        "Integrated with Google AdMob for compliant banner & rewarded ads"
+        "Polished sound effects, animations, and fluid particle effects"
       ],
-      techStack: ["Mobile Game Engine", "Fluid Physics", "Google AdMob", "Android"],
+      techStack: ["Mobile Game Engine", "Fluid Physics", "Logic Algorithms", "Android"],
       storeUrl: "https://play.google.com/store/apps/details?id=com.RedAbrus.WaterSortColorFlow",
-      privacyPolicyUrl: "#privacy-modal",
-      appAdsTxtUrl: "app-ads.txt"
+      privacyPolicyUrl: "#privacy-modal"
     },
     {
       id: "lucid-dreams",
@@ -54,7 +50,6 @@ const PORTFOLIO_DATA = {
       category: "Productivity & Lifestyle",
       platform: "Google Play Store",
       badge: "Dream Journal App",
-      isAdmobVerified: false,
       
       /* ICON PATH: You can manually replace this file in assets/icons/ */
       icon: "assets/icons/lucid_dreams.jpg",
@@ -68,8 +63,7 @@ const PORTFOLIO_DATA = {
       ],
       techStack: ["Ionic Framework", "Cordova", "Angular", "Local Storage"],
       storeUrl: "https://play.google.com/store/apps/details?id=com.RedAbrus.LucidDreams&hl=en",
-      privacyPolicyUrl: null,
-      appAdsTxtUrl: null
+      privacyPolicyUrl: null
     },
     {
       id: "muscateer",
@@ -77,7 +71,6 @@ const PORTFOLIO_DATA = {
       category: "Travel & Local Directory",
       platform: "Google Play Store",
       badge: "City Discovery App",
-      isAdmobVerified: false,
       
       /* ICON PATH: You can manually replace this file in assets/icons/ */
       icon: "assets/icons/muscateer.jpg",
@@ -91,8 +84,7 @@ const PORTFOLIO_DATA = {
       ],
       techStack: ["Ionic Framework", "Cordova", "Angular", "Geolocation API"],
       storeUrl: "https://play.google.com/store/apps/details?id=com.muscateers&hl=en",
-      privacyPolicyUrl: null,
-      appAdsTxtUrl: null
+      privacyPolicyUrl: null
     }
   ],
 
@@ -167,8 +159,7 @@ const PORTFOLIO_DATA = {
       { name: "Ionic Framework", level: "Advanced" },
       { name: "Cordova / Capacitor", level: "Advanced" },
       { name: "Android App Development", level: "Proficient" },
-      { name: "Google Play Console", level: "Proficient" },
-      { name: "Google AdMob", level: "Proficient" }
+      { name: "Google Play Console", level: "Proficient" }
     ],
     toolsAndBackend: [
       { name: "Git & GitHub", level: "Advanced" },
